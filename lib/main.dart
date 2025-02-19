@@ -35,7 +35,9 @@ class lab05 extends StatelessWidget {
                 size: 60,
               )
 
-              Image(image: )
+              Image(image:AssetImage(nike.png.webp),
+                
+               )
 
                Icon(
                 Icons.star,
