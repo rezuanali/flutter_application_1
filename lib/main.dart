@@ -1,56 +1,39 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const lab05());
-
+  runApp(const MyWidget());
 }
 
-class lab05 extends StatelessWidget {
-  const lab05({super.key});
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title : "This is new app",
+      title: "Flutter project",
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Fluter UI 2"),
-          backgroundColor: Colors.blue,
+          title: const Text("Star Widget"),
         ),
-        body: Container(
-          height: double.infinity,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.star,
-                color: Colors.yellow,
-                size: 60,
-              )
-
-               Icon(
-                Icons.star,
-                color: Colors.yellow,
-                size: 60,
-              )
-
-              Image(image:AssetImage(nike.png.webp),
-                
-               )
-
-               Icon(
-                Icons.star,
-                color: Colors.yellow,
-                size: 60,
-              )
-            ],
-          ),
-        )
-        
-      
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            Icon(
+              Icons.star,
+              color: Colors.yellow,
+              size: 70,
+            ),
+            Image(
+              image: AssetImage('assets\task_2.png'),
+            ),
+            Icon(
+              Icons.star,
+              color: Colors.grey,
+              size: 70,
+            ),
+          ],
         ),
       ),
-
-    )
+    );
   }
+}
